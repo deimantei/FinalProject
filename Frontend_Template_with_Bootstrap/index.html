@@ -153,8 +153,8 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div class="single-testimonial">
                             <i class="fa fa-quote-right"></i>
-                            <p>The space between an idea and a concept is your lips. If you can’t say it out loud you can’t do it.</p>
-                            <h6>NICK LONGO </h6>
+                            <p>Music is the strongest form of magic.</p>
+                            <h6>Marilyn Manson </h6>
                         </div>  
                     </div> 
                 </div>
@@ -167,29 +167,45 @@
                 <div class="form">
                     <h2>Book a concert</h2>
                     <span>Fill a form</span>
-                    <div class="divider divider-lg"></div>
-                    <table>
-                        <thead>
-                            <tr>
-                            <th>First name</th>
-                            <th>Last name</th>
-                            <th>E-mail</th>
-                            <th> Phone</th>
-                            </tr>
-                        </thead>
-                        <tbody id='customersTab'>
-
-                        </tbody>
-                    </table>
                     <form method="POST" action ='http://localhost:5000/add-customer'>
                         <div class="form-group">
-                            <input name="name">
-                            <input name="lastname">
-                            <input name="email">
-                            <input name="phone">
-                            <button class="btn">Book!</button>
-                        </div>
-                    </form>
+                        <div class="mb-3 row">
+                            <label for="name" class="col-sm-2 col-form-label">First Name *</label>
+                            <div class="col-sm-10">
+                              <input type="text" name="name" class="form-control-plaintext" id="name" placeholder="First Name" required>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label for="lastname" class="col-sm-2 col-form-label">Last Name *</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control-plaintext" id="lastname" placeholder="Last Name" name="lastname" required>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label for="bdate" class="col-sm-2 col-form-label">Birthday date *</label>
+                            <div class="col-sm-10">
+                              <input type="date" class="form-control-plaintext" id="bdate" placeholder="yyyy-mm-dd" name="bdate" required>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label for="email" class="col-sm-2 col-form-label">Email *</label>
+                            <div class="col-sm-10">
+                              <input type="text" name="email" class="form-control-plaintext" id="email" placeholder="email@email.com required"
+                              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}">
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+                            <div class="col-sm-10">
+                              <input type="text" name="phone" class="form-control-plaintext" id="phone" placeholder="+37000000000"
+                              pattern="\+37[0-2]{1}[0-9]{8}">
+                            </div>
+                          </div>
+                            <button class="btn-btn-primary">Save</button>
+                            <p>* - required fields</p>
+                          </div>
+                            </div>
+                        </form>
                 </div>
             </div>
     </div>
@@ -208,40 +224,40 @@
             <div class="col-md-3 col-sm-6">
                 <div class="team-member">
                     <img src="img/team/img1.jpg" class="img-responsive">
-                    <h6>Graph Berry</h6>
+                    <h6>John Doe</h6>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="team-member">
                     <img src="img/team/img2.jpg" class="img-responsive">
-                    <h6>Graph Berry</h6>
+                    <h6>Jane Doe</h6>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="team-member">
                     <img src="img/team/img3.jpg" class="img-responsive">
-                    <h6>Graph Berry</h6>
+                    <h6>John Doe</h6>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="team-member">
                     <img src="img/team/img4.jpg" class="img-responsive">
-                    <h6>Graph Berry</h6>
+                    <h6>Jane Doe</h6>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <h3>About Us</h3>
-                <p>I like jumping back and forth between a few different things to let my subconscious chew on one problem while my conscious works on something else.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eaque quisquam cumque aut rerum laudantium sunt pariatur dolorum nostrum ipsum!</p>
             </div>
             <div class="col-md-4">
                 <h3>Who We Are</h3>
-                <p>I like jumping back and forth between a few different things to let my subconscious chew on one problem while my conscious works on something else.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fuga quibusdam tempora consequuntur voluptatem sed saepe voluptate quis officiis assumenda?</p>
             </div>
             <div class="col-md-4">
                 <h3>Why We Do This</h3>
-                <p>I like jumping back and forth between a few different things to let my subconscious chew on one problem while my conscious works on something else.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quae praesentium quasi eligendi fugiat officia ea delectus possimus aliquam mollitia.</p>
             </div>
         </div>
     </div>
@@ -270,8 +286,8 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="title text-center">
-                    <h2>Contact Us</h2>
-                    <h6>We love talking</h6>
+                    <h2>Fan mail</h2>
+                    <h6>We love talking and hearing from you</h6>
                     <div class="divider divider-lg"></div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, nesciunt.</p>
                 </div>
@@ -280,18 +296,18 @@
         <div class="row">
             <address class="col-md-4">
              <i class="fa fa-envelope"></i>
-             <span>somemail@sample.com</span>
+             <span>info@theband.com</span>
          </address>
          <address class="col-md-4">
             <span>
                 <i class="fa fa-home"></i>
-                T123 Timbal Oak Drive<br>
-                Sundown, TX 12345
+                A. Strazdelio g. 1, <br>
+                Vilnius 02102
             </span>
         </address>
         <address>
             <i class="fa fa-phone"></i>
-            <span>+000 - 123 -456 - 789</span>
+            <span>+370 - 123 -456 - 789</span>
         </address>
     </div>
     <form>
@@ -335,7 +351,7 @@
                     <li class="wow bounceIn" data-wow-delay="0.5s"><a href="http://goo.gl/r4xzR4" target="_blank"><i class="fa fa-google"></i></a></li>
                 </ul>
                 <p>Theme created by <a href="http://graphberry.com" target="_blank">GraphBerry</p>
-                <p>Page created by Daina Silina and Deimantė Stankūnaitė</p>
+                <p>Page created by Daina Siliņa and Deimantė Stankūnaitė</p>
             </div>
         </div>
     </div>
