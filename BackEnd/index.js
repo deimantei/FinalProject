@@ -97,7 +97,7 @@ app.post('/add-message', (req,res) => {
         res.send(JSON.stringify({
             "status": 200,
             "error": null,
-            "response": "Thanks for reaching us, : " + results.insertName + "!"
+            "response": "Thanks for reaching us, " + newMessage.name + "!"
         }))
     })
 })
