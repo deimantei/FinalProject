@@ -1,0 +1,435 @@
+<!--
+ * A Design by GraphBerry
+ * Author: GraphBerry
+ * Author URL: http://graphberry.com
+ * License: http://graphberry.com/pages/license
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>THE BAND</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free singlepage web template created by GraphBerry">
+    <meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, PHP, Responsive, Mobile">
+    <meta name="author" content="GraphBerry.com"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <audio src="music/bensound-autoreverse.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
+    <header>
+    <nav class="navbar navbar-fixed-top" id="header-nav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Wooster logo" />
+        </a>
+    </div>
+    <div class="primary-menu">
+        
+        
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
+        <div id="navbar" class="navbar-collapse collapse">
+             <ul class="nav navbar-nav">
+                <li><a data-scroll href="#">Home</a></li>
+                <li><a data-scroll href="#portfolio">Portfolio</a></li>
+                <li><a data-scroll href="#bookings">Tickets</a></li>
+                <li><a data-scroll href="#gallery">Gallery</a></li>
+                <li><a data-scroll href="#about">About</a></li>
+                <li><a data-scroll href="#members">Members</a></li>
+                <li><a data-scroll href="#contact">Contact</a></li>
+                <li><a onclick="pause()"> <i class="fa-solid fa-volume-off"></i> the music </a></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+  </div>
+</nav>
+      
+    <div class="main-head">
+     <div class="container">
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>This is...</h4>
+                <div class="divider"></div>
+                <h1>THE BAND</h1>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<div class="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <h4>Welcome to our website</h4>
+            </div>
+            <div class="col-md-2"></div>
+            <a href="#bookings" class="btn btn-cta">Book tickets!</a>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="about" class="no-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section-text">
+                <div class="title title-left">
+                    <h2>About our band</h2>
+                    <h6>Closer to the star</h6>
+                    <div class="divider divider-sm"></div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda placeat repellendus ea laborum magni magnam dolor eveniet eos aspernatur! Repellendus nostrum sit, maiores ut magnam laborum! Reprehenderit, quo atque deleniti dolor assumenda, velit maiores aperiam quod iste dicta recusandae? Iure.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio deserunt quia, fugit reiciendis neque consectetur quisquam dignissimos quidem at doloremque.</p>
+                <a href="#portfolio" class="btn btn-primary">Listen to our songs</a>
+            </div>
+            <div class="col-md-6">
+                <br>
+                <br>
+                <img src="img/typewriter.jpg" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <div class="video-wrapper">
+            <div class="centred-container">
+                <h3>Our latest concert: </h3>
+                <a href="https://youtu.be/-6CXjdy3_Ik" id="popup-youtube"><i class="fa fa-play-circle"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="portfolio" id="portfolio">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="title text-center">
+            <h2>Our songs</h2>
+            <h6>See our best work so far</h6>
+            <div class="divider divider-lg"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem ratione aspernatur a obcaecati aperiam ea natus libero omnis porro?</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-center">
+                <audio src="music/bensound-backtothefuture.mp3" id="song1"></audio>
+                <button class="btn btn-primary" onclick="song1()"> The Band - Back to the Future <i class="fa-solid fa-play"></i> </button>
+                <button class="btn btn-primary" onclick="pause1()"> <i class="fa-solid fa-pause"></i></button><br><br>
+                
+                <audio src="music/bensound-ontheroads.mp3" id="song3"></audio>
+                <button class="btn btn-primary" onclick="song3()">The Band - On the Roads <i class="fa-solid fa-play"></i> </button>
+                <button class="btn btn-primary" onclick="pause3()"> <i class="fa-solid fa-pause"></i></button><br><br>
+
+                <audio src="music/bensound-indigo.mp3" id="song2"></audio>
+                <button class="btn btn-primary" onclick="song2()">The Band - Indigo <i class="fa-solid fa-play"></i> </button> <i class="fa-sharp fa-solid fa-sparkles">NEW!</i> 
+                <button class="btn btn-primary" onclick="pause2()"> <i class="fa-solid fa-pause"></i></button><br><br>
+        </div>    
+    </div>>
+</section>
+<section class="gallery" id="gallery">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="title text-center">
+            <h2>Gallery</h2>
+            <h6>See our best moments</h6>
+            <div class="divider divider-lg"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem ratione aspernatur a obcaecati aperiam ea natus libero omnis porro?</p>
+        </div>
+    </div>
+    <div class="container" id="portfolio-grid">
+        <nav class="centered-pills clearfix">
+            <ul class="nav nav-pills" >
+                <li><a href="javascript:void(0);" class="filter active" data-filter="all">All</a></li>
+                <li><a href="javascript:void(0);" class="filter" data-filter=".mockups">Summer festival</a></li>
+                <li><a href="javascript:void(0);" class="filter" data-filter=".devices">Finland 2021</a></li>
+                <li><a href="javascript:void(0);" class="filter" data-filter=".frames">Acoustic</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <figure class="mix all devices col-md-4 col-sm-6" >
+                <img class="img-responsive" src="img/portfolio/mackbook.jpg" alt="MackBook Mockup" />
+            </figure>
+            <figure class="mix all frames col-md-4 col-sm-6" >
+                <img class="img-responsive" src="img/portfolio/frame.jpg" alt="Frame" />
+            </figure>
+            <figure class="mix all templates col-md-4 col-sm-6" >
+                <img class="img-responsive" src="img/portfolio/coming-soon.jpg" alt="Coming soon" />
+            </figure>
+            <figure class="mix all devices col-md-4 col-sm-6" >
+                <img class="img-responsive" src="img/portfolio/phone.jpg" alt="Adena icons pack" />
+            </figure>
+            <figure class="mix all templates col-md-4 col-sm-6" >
+                <img class="img-responsive" src="img/portfolio/branding.jpg" alt="Adena icons pack" />
+            </figure>
+            <figure class="mix all mockups col-md-4 col-sm-6" >
+                <img class="img-responsive" src="img/portfolio/iphone6.jpg" alt="Adena icons pack" />
+            </figure>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="testimonial">
+        <div class="mask">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="single-testimonial">
+                            <i class="fa fa-quote-right"></i>
+                            <p>Music is the strongest form of magic.</p>
+                            <h6>Marilyn Manson </h6>
+                        </div>  
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+<section class="bookings" id="bookings">
+    <div class ='container'>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="title">
+                    <h2>Book a concert</h2>
+                    <span>Fill a form</span>
+                    <div class="divider divider-lg"></div>
+                </div>
+                    <form method="POST" action ='http://localhost:5000/add-customer'>
+                        <div class="form-group">
+                        <div class="mb-3 row">
+                            <label for="name" class="col-sm-2 col-form-label">First Name *</label>
+                            <div class="col-sm-10">
+                              <input type="text" name="name" class="form-control-plaintext" id="name" placeholder="First Name" required>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label for="lastname" class="col-sm-2 col-form-label">Last Name *</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control-plaintext" id="lastname" placeholder="Last Name" name="lastname" required>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label for="bdate" class="col-sm-2 col-form-label">Birthday date *</label>
+                            <div class="col-sm-10">
+                              <input type="date" class="form-control-plaintext" id="bdate" placeholder="yyyy-mm-dd" name="bdate" required>
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label for="email" class="col-sm-2 col-form-label">Email *</label>
+                            <div class="col-sm-10">
+                              <input type="text" name="email" class="form-control-plaintext" id="email" placeholder="email@email.com required"
+                              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}">
+                            </div>
+                          </div>
+                          <div class="mb-3 row">
+                            <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+                            <div class="col-sm-10">
+                              <input type="text" name="phone" class="form-control-plaintext" id="phone" placeholder="+37000000000"
+                              pattern="\+37[0-2]{1}[0-9]{8}">
+                            </div>
+                          </div>
+                            <button class="btn-btn-primary">Save</button>
+                            <p>* - required fields</p>
+                          </div>
+                        </form>
+                        <form method="POST" action ='http://localhost:5000/get-bandshow'>
+                            <div class="form-group">
+                            <div class="mb-3 row">
+                            <label for="show" class="col-sm-2 col-form-label">Select show: *</label>
+                            <select id="show">
+                                <option>Barcelona 2022-10-30</option>
+                                <option>Cologne 2022-11-15</option>
+                                <option>Vilnius 2022-11-20</option>
+                                <option>Riga 2022-11-28</option>
+                            </select>
+                            <button class="btn-btn-primary">Book</button>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<section id="members">
+    <div class="testimonial2">
+        <div class="mask">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="single-testimonial">
+                            <i class="fa fa-quote-right"></i>
+                            <p>Alone we can do so little; together we can do so much.</p>
+                            <h6>Helen Keller </h6>
+                        </div>  
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="members">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="title">
+                    <h2>About us</h2>
+                    <span>Who we are</span>
+                    <div class="divider divider-lg"></div>
+                    <p>The way a team plays as a whole determines its success. You may have the greatest bunch of individual stars in the world, but if they don’t play together, the club won’t be worth a dime.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row team">
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <img src="img/team/img1.jpg" class="img-responsive">
+                    <h6>John Doe</h6>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <img src="img/team/img2.jpg" class="img-responsive">
+                    <h6>Jane Doe</h6>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <img src="img/team/img3.jpg" class="img-responsive">
+                    <h6>John Doe</h6>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="team-member">
+                    <img src="img/team/img4.jpg" class="img-responsive">
+                    <h6>Jane Doe</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eaque quisquam cumque aut rerum laudantium sunt pariatur dolorum nostrum ipsum!</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Who We Are</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem fuga quibusdam tempora consequuntur voluptatem sed saepe voluptate quis officiis assumenda?</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Why We Do This</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quae praesentium quasi eligendi fugiat officia ea delectus possimus aliquam mollitia.</p>
+            </div>
+        </div>
+    </div>
+    <div class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h4>Subscribe to our newsletter</h4>
+                    <div class="row">
+                        <form method="post" action="http://localhost:5000/add-subscriber" role="form" class="form-inline">
+                            <div class="col-md-9">
+                                <input type="text" placeholder="Enter your e-mail address..." class="subscribe-input" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" required>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="submit" class="btn btn-cta">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="title text-center">
+                    <h2>Fan mail</h2>
+                    <h6>We love talking and hearing from you</h6>
+                    <div class="divider divider-lg"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, nesciunt.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <address class="col-md-4">
+             <i class="fa fa-envelope"></i>
+             <span>info@theband.com</span>
+         </address>
+         <address class="col-md-4">
+            <span>
+                <i class="fa fa-home"></i>
+                A. Strazdelio g. 1, <br>
+                Vilnius 02102
+            </span>
+        </address>
+        <address>
+            <i class="fa fa-phone"></i>
+            <span>+370 - 123 -456 - 789</span>
+        </address>
+    </div>
+    <form method="post" action="http://localhost:5000/add-message">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject*" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Name*" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <textarea class="form-control" name="message" id="message" placeholder="Message goes here..." required></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </form>
+</div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+            <img src="img/logo-white.png" class="logo-footer" />
+                <ul class="social">
+                    <li class="wow bounceIn"><a href="https://www.facebook.com/diamonds.de" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li class="wow bounceIn" data-wow-delay="0.1s"><a href="http://goo.gl/hUfpSB" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li class="wow bounceIn" data-wow-delay="0.2s"><a href="https://www.instagram.com/d.e.i.m.a.n.t.e/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li class="wow bounceIn" data-wow-delay="0.3s"><a href="http://goo.gl/FPjuCE" target="_blank"><i class="fa fa-behance"></i></a></li>
+                    <li class="wow bounceIn" data-wow-delay="0.4s"><a href="http://goo.gl/UYjGTR" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                    <li class="wow bounceIn" data-wow-delay="0.5s"><a href="http://goo.gl/r4xzR4" target="_blank"><i class="fa fa-google"></i></a></li>
+                </ul>
+                <p>Theme created by <a href="http://graphberry.com" target="_blank">GraphBerry</p>
+                <p><a></a>Website created by Daina Siliņa and Deimantė Stankūnaitė</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.mixitup.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script src="https://kit.fontawesome.com/9df0a0a2be.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/smooth-scroll.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
