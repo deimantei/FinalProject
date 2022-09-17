@@ -8,12 +8,12 @@ window.onload=function(){
  }
 
  //server and database
-$($.getJSON('http://localhost:5000/get-allCustomer', 
+$($.getJSON('http://localhost:5000/get-bandshow', 
     function(data){
-        const customers = data.response.customers;
-        const customersTabElement = $('#customersTab');
+        const show = data.response.bandshow;
+        const showTabElement = $('#showTab');
         for(let i=0; i<customers.length; i++) {
-            const customer = customers[i];
+            const show = bandshow[i];
 
             const row = document.createElement('tr');
 
